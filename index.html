@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess Number Game</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Игра угадай число</h1>
+      <div class="message"></div>
+      <p>
+        В этой игре компьютер загадывает число от 1 до 100. В инпут на экране
+        игрок вводит число от 1 до 100, пытаясь угадать, что же загадал
+        компьютер.
+      </p>
+      <button class="generate-random-number">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        <span class="button-span">играть</span>
+      </button>
+      <input
+        type="text"
+        class="guess-number"
+        placeholder="введите число от 1 до 100"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

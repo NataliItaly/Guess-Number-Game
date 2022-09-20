@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #e8c5f1;
+  text-align: center;
+  color: #4e4b4b;
+  font-size: 18px;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.message {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #efb6ef;
+  border-radius: 10px;
+  opacity: 0;
+}
+.message.visible {
+  opacity: 1;
+}
+p {
+  margin-top: 0;
+  font-size: 20px;
+}
+.generate-random-number {
+  color: #4e4b4b;
+  font-size: 22px;
+  cursor: pointer;
+  width: 180px;
+  height: 60px;
+  padding: 10px 30px;
+  border-radius: 7px;
+  border: none;
+  background-image: linear-gradient(#f89be8, #d888f2);
+  transition: 0.3s all ease;
+  position: relative;
+}
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.generate-random-number:hover {
+  transition: 1s ease-in-out;
+  background: #dd99e3;
+}
+
+.generate-random-number:hover svg {
+  stroke-dashoffset: -480;
+}
+.guess-number {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #efb6ef;
+  border: none;
+  text-align: center;
+  transition: 0.3s;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+.guess-number:focus {
+  outline: none;
+  background-color: #f5c5f5;
+  font-size: 18px;
+}
+.guess-number::placeholder {
+  font-size: 16px;
+}
